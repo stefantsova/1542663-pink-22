@@ -1,0 +1,34 @@
+.intro {
+  background-color: $secondaryTextBgr;
+}
+
+.intro__demo {
+  color: $primaryText;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 120%;
+  background-image: url("../img/index/back-mobile.jpg");
+  background-repeat: no-repeat;
+}
+
+.intro__download-button {
+  padding: 21px 39px 21px 38px;
+  color: $primaryText;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  text-decoration: none;
+  border: 3px solid white;
+  border-radius: 29px;
+}
+
+.intro__download-list {
+  list-style: none;
+}
+
+.intro__text {
+  color: $primaryText;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+}
