@@ -1,0 +1,29 @@
+.price {
+  background: $secongaryBackground;
+}
+
+.price__list {
+  line-height: 30px;
+  text-transform: uppercase;
+
+  thead {
+    color: $primaryText;
+    background: $secondaryTextBgr;
+  }
+
+  tbody {
+    color: $secondaryTextBgr;
+    background: #ffffff;
+    font-size: 14px;
+  }
+}
+
+.price_plan {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.price_usd {
+  font-size: 18px;
+  font-weight: 300;
+}

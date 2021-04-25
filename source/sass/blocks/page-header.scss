@@ -1,0 +1,16 @@
+.page-header {
+  background: $secondaryTextBgr;
+
+  ul {
+    list-style: none;
+  }
+
+  a {
+    color: $primaryText;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 32px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+}

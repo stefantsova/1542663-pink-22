@@ -1,0 +1,15 @@
+.reviews {
+  line-height: 30px;
+}
+
+.reviews__author-name {
+  font-size: 18px;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.reviews__text {
+  color: $secondaryTextBgr;
+  font-size: 14px;
+  font-weight: 400;
+}
