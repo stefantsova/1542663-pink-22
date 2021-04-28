@@ -23,14 +23,18 @@
       </nav>
     </header>
     <main class="page-main contest">
-      <h1 class="contest__heading">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      <section class="intro contest-intro">
+        <h1 class="intro__slogan contest__heading">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      </section>
       <p class="contest__intro-text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
       <form class="contest-form" action="#" method="GET">
+        <div class="contest-form_personal-container">
         <fieldset class="contest-form__personal-info">
           <label>Фамилия:<input type="text" name="surname" placeholder="Укажите фамилию" required></label>
           <label>Имя:<input type="text" name="first-name" placeholder="Введите ваше имя" required></label>
-          <label>Отчество:<input type="text" name="patronymic" placeholder="Ну и отчество тоже" required></label>
+          <label>Отчество:<input type="text" name="patronymic" placeholder="Ну и отчество тоже"></label>
         </fieldset>
+        </div>
         <fieldset class="contest-form__achievements">
           <legend>Ваши безбашенные достижения в путешествии</legend>
           <ul class="achievements-list">
@@ -65,11 +69,12 @@
           <label><input type="radio" name="os" value="windows">Windows Phone</label>
         </fieldset>
         <fieldset class="contest-form__emotions">
-          <label>Опишите свои эмоции<textarea name="emotions" rows="8" cols="24" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea></label>
+          <legend>Опишите свои эмоции</legend>
+          <textarea name="emotions" rows="8" cols="24" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </fieldset>
         <div class="contest-form__submit submit">
           <button class="submit__button" type="submit">Отправить форму</button>
-          <p class="submit__text">&ast; — обязательные поля</p>
+          <p class="submit__text"><span class="submit__ast">&ast;</span> — обязательные поля</p>
         </div>
       </form>
     </main>
