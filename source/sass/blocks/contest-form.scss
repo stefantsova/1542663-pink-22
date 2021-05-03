@@ -1,12 +1,12 @@
 .contest-form {
-  fieldset,
-  input,
-  textarea {
+  .contest-form__fieldset,
+  .contest-form__input,
+  .contest-form__textarea {
     border: 2px solid $border;
   }
 
-  input,
-  textarea {
+  .contest-form__input,
+  .contest-form__textarea {
     padding: 23px 20px;
 
     &::placeholder {
@@ -17,7 +17,13 @@
     }
   }
 
-  .submit__button {
+  .contest-form__fieldset {
+    &_no-border {
+      border: none;
+    }
+  }
+
+  .contest-form__submit-btn {
     padding: 23px 45px;
     color: $lightText;
     font-size: 18px;
@@ -28,56 +34,54 @@
     border: none;
   }
 
-  .submit__text {
+  .contest-form__submit-text {
     font-size: 14px;
     font-weight: 400;
     line-height: 30px;
     text-transform: uppercase;
   }
 
-  .submit__ast {
+  .context-form__submit-ast {
     color: $accentText;
   }
-}
 
-.contest-form_personal-container {
-  fieldset {
-    border: 0;
-  }
-}
-
-.contest-form__personal-info,
-.contest-form__contact-info {
-  label {
-    color: $accentText;
-    text-transform: uppercase;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 30px;
-  }
-}
-
-.contest-form__achievements {
-  label {
-    color: $darkTextBgr;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 30px;
+  .contest-form__personal-info,
+  .contest-form__contact-info {
+    .contest-form__label {
+      &_accent {
+        color: $accentText;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 30px;
+      }
+    }
   }
 
-  .achievements-list {
+  .contest-form__achievements {
+    .contest-form__label {
+      &_no-accent {
+        color: $darkTextBgr;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 30px;
+      }
+    }
+  }
+
+  .contest-form__achievements-list {
     list-style: none;
   }
-}
 
-.contest-form__achievements,
-.contest-form__os,
-.contest-form__emotions {
-  legend {
-    color: $accentText;
-    text-transform: uppercase;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 18px;
+
+  .contest-form__achievements,
+  .contest-form__os,
+  .contest-form__emotions {
+    legend {
+      color: $accentText;
+      text-transform: uppercase;
+      font-size: 14px;
+      line-height: 18px;
+    }
   }
 }

@@ -28,53 +28,51 @@
       </section>
       <p class="contest__intro-text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
       <form class="contest-form" action="#" method="GET">
-        <div class="contest-form_personal-container">
-        <fieldset class="contest-form__personal-info">
-          <label>Фамилия:<input type="text" name="surname" placeholder="Укажите фамилию" required></label>
-          <label>Имя:<input type="text" name="first-name" placeholder="Введите ваше имя" required></label>
-          <label>Отчество:<input type="text" name="patronymic" placeholder="Ну и отчество тоже"></label>
+        <fieldset class="contest-form__personal-info contest-form__fieldset contest-form__fieldset_no-border">
+          <label class="contest-form__label_accent">Фамилия:<input class="contest-form__input" type="text" name="surname" placeholder="Укажите фамилию *" required></label>
+          <label class="contest-form__label_accent">Имя:<input class="contest-form__input" type="text" name="first-name" placeholder="Введите ваше имя *" required></label>
+          <label class="contest-form__label_accent">Отчество:<input class="contest-form__input" type="text" name="patronymic" placeholder="Ну и отчество тоже"></label>
         </fieldset>
-        </div>
-        <fieldset class="contest-form__achievements">
+        <fieldset class="contest-form__achievements contest-form__fieldset">
           <legend>Ваши безбашенные достижения в путешествии</legend>
-          <ul class="achievements-list">
-            <li class="achievements-item">
-              <label><input type=checkbox name="shark-selfie" checked>Сделал селфи с акулой</label>
+          <ul class="contest-form__achievements-list">
+            <li class="contest-form__achievements-item">
+              <label class="contest-form__label_no-accent"><input class="contest-form__input" type=checkbox name="shark-selfie" checked>Сделал селфи с акулой</label>
             </li>
-            <li>
-              <label><input type=checkbox name="sunburn" checked>Обгорел на пляже</label>
+            <li class="contest-form__achievements-item">
+              <label class="contest-form__label_no-accent"><input class="contest-form__input" type=checkbox name="sunburn" checked>Обгорел на пляже</label>
             </li>
-            <li>
-              <label><input type=checkbox name="norris">Видел Чака Норриса</label>
+            <li class="contest-form__achievements-item">
+              <label class="contest-form__label_no-accent"><input class="contest-form__input" type=checkbox name="norris">Видел Чака Норриса</label>
             </li>
-            <li>
-              <label><input type=checkbox name="souvenirs">Накупил сувениров</label>
+            <li class="contest-form__achievements-item">
+              <label class="contest-form__label_no-accent"><input class="contest-form__input" type=checkbox name="souvenirs">Накупил сувениров</label>
             </li>
-            <li>
-              <label><input type=checkbox name="tower" checked>Удержал башню</label>
+            <li class="contest-form__achievements-item">
+              <label class="contest-form__label_no-accent"><input class="contest-form__input" type=checkbox name="tower" checked>Удержал башню</label>
             </li>
-            <li>
-              <label><input type=checkbox name="hotel-ruined">Разгромил отель</label>
+            <li class="contest-form__achievements-item">
+              <label class="contest-form__label_no-accent"><input class="contest-form__input" type=checkbox name="hotel-ruined">Разгромил отель</label>
             </li>
           </ul>
         </fieldset>
-        <fieldset class="contest-form__contact-info">
-          <label>Номер телефона<input type="tel" name="phone" placeholder="Номер, пожалуйста"></label>
-          <label>Адрес почты<input type="email" name="email" placeholder="Введите почту" required></label>
+        <fieldset class="contest-form__contact-info contest-form__fieldset">
+          <label class="contest-form__label_accent">Номер телефона<input class="contest-form__input" type="tel" name="phone" placeholder="Номер, пожалуйста"></label>
+          <label class="contest-form__label_accent">Адрес почты<input class="contest-form__input" type="email" name="email" placeholder="Введите почту *" required></label>
         </fieldset>
-        <fieldset class="contest-form__os">
+        <fieldset class="contest-form__os contest-form__fieldset">
           <legend>С каким приложением путешествовали?</legend>
-          <label><input type="radio" name="os" value="ios" checked>Pink для iOS</label>
-          <label> <input type="radio" name="os" value="android">Pink для Android</label>
-          <label><input type="radio" name="os" value="windows">Windows Phone</label>
+          <label class="contest-form__label_no-accent"><input class="contest-form__input" type="radio" name="os" value="ios" checked>Pink для iOS</label>
+          <label class="contest-form__label_no-accent"> <input class="contest-form__input" type="radio" name="os" value="android">Pink для Android</label>
+          <label class="contest-form__label_no-accent"><input class="contest-form__input" type="radio" name="os" value="windows">Windows Phone</label>
         </fieldset>
-        <fieldset class="contest-form__emotions">
+        <fieldset class="contest-form__emotions contest-form__fieldset">
           <legend>Опишите свои эмоции</legend>
-          <textarea name="emotions" rows="8" cols="24" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          <textarea class="contest-form__textarea" name="emotions" rows="8" cols="24" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </fieldset>
-        <div class="contest-form__submit submit">
-          <button class="submit__button" type="submit">Отправить форму</button>
-          <p class="submit__text"><span class="submit__ast">&ast;</span> — обязательные поля</p>
+        <div class="contest-form__submit">
+          <button class="contest-form__submit-btn" type="submit">Отправить форму</button>
+          <p class="contest-form__submit-text"><span class="context-form__submit-ast">&ast;</span> — обязательные поля</p>
         </div>
       </form>
     </main>
