@@ -1,0 +1,34 @@
+.gallery-post {
+
+  background-color: $secongaryBgr;
+
+  .gallery-post__username {
+    color: $darkTextBgr;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+  }
+
+  .gallery-post__time {
+    color: $darkTextBgr;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 24px;
+    text-transform: uppercase;
+  }
+
+  .gallery-post__content {
+    color: $darkTextBgr;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  .gallery-post__like-text {
+    color: $accentText;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: uppercase;
+  }
+}
