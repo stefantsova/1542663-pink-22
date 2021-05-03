@@ -1,5 +1,5 @@
 .price {
-  background: $secongaryBackground;
+  background: $secongaryBgr;
 }
 
 .price__list {
@@ -7,12 +7,12 @@
   text-transform: uppercase;
 
   thead {
-    color: $primaryText;
-    background: $secondaryTextBgr;
+    color: $lightText;
+    background: $darkTextBgr;
   }
 
   tbody {
-    color: $secondaryTextBgr;
+    color: $darkTextBgr;
     background: #ffffff;
     font-size: 14px;
   }
