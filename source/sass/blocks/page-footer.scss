@@ -1,10 +1,19 @@
-.copyright-text {
-  color: $darkTextBgr;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 18px;
-}
+.page-footer {
+  display: flex;
+  flex-direction: column;
 
-.social-list {
-  list-style: none;
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
+
+  .page-footer__copyright-text {
+    color: $darkTextBgr;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+  }
+
+  .page-footer__social-list {
+    list-style: none;
+  }
 }

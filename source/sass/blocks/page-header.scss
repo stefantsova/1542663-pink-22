@@ -1,16 +1,19 @@
 .page-header {
+  display: flex;
+  flex-direction: column;
   background: $darkTextBgr;
 
-  ul {
-    list-style: none;
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    background: none;
   }
 
-  a {
-    color: $lightText;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 32px;
-    text-decoration: none;
-    text-transform: uppercase;
+  .page-header__logo {
+    height: 69px;
+    margin-left: 20px;
+
+    @media (min-width: $tablet-width) {
+      height: 110px;
+    }
   }
 }

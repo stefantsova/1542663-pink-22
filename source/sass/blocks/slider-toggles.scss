@@ -1,0 +1,17 @@
+.slider__toggle {
+  width: 6px;
+  height: 6px;
+  padding: 0;
+  background-color: $darkTextBgr;
+  border-radius: 50%;
+  opacity: 0.3;
+
+  /*
+  &--current {
+    background-color: $lightText;
+    border-radius: 50%;
+    border: 3px solid $darkTextBgr;
+    opacity: 1;
+  }
+  */
+}

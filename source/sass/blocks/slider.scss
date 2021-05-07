@@ -1,0 +1,29 @@
+.slider {
+  width: 280px;
+  margin: 0 auto;
+  text-align: center;
+  overflow: hidden;
+
+  .slider__list {
+    display: flex;
+    justify-content: center;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .slider__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    width: 280px;
+    transform-origin: center center;
+    transform: scale(1);
+    transition: transform 0.5s;
+  }
+}
