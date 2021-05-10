@@ -1,21 +1,13 @@
 .effect {
-  position: relative;
   width: 100%;
   display: none;
 
   @media (min-width: $tablet-width) {
     display: flex;
-    justify-content: space-between;
-    padding: 54px 20px 0 20px;
-    box-sizing: border-box;
-    bottom: 66px;
-    z-index: 2;
-    background-color: #ffffff;
+    justify-content: flex-end;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 47px 0 80px 0;
-    box-sizing: border-box;
     background-color: $secongaryBgr;
     background-image: none;
   }
@@ -31,7 +23,7 @@
   }
 
   .effect__title {
-    width: 50%;
+    width: 168px;
     color: $secondaryHeading;
     font-size: 30px;
     font-weight: 700;
@@ -44,7 +36,7 @@
   }
 
   .effect__text {
-    width: 100%;
+    width: 310px;
     color: $darkTextBgr;
     font-size: 14px;
     font-weight: 400;
