@@ -5,7 +5,6 @@
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
-    align-items: baseline;
     background: none;
   }
 
@@ -18,7 +17,8 @@
     box-sizing: border-box;
 
     @media (min-width: $desktop-width) {
-      width: 320px;
+      width: 30%;
+      height: 110px;
       padding-left: 0;
     }
   }
@@ -31,6 +31,10 @@
       width: 145px;
       height: 40px;
     }
+
+    @media (min-width: $desktop-width) {
+      margin: 27px auto 43px 0;
+    }
   }
 
   .page-header__nav-toggle {
@@ -38,6 +42,8 @@
     height: 23px;
     background-color: $darkTextBgr;
     background-image: url("../../img/close_menu_btn.svg");
+    background-position: center;
+    border: none;
 
     @media (min-width: $desktop-width) {
       display: none;

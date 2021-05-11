@@ -37,20 +37,21 @@
     color: $lightText;
     font-size: 24px;
     font-weight: 300;
-    line-height: 120%;
+    line-height: 29px;
     text-align: center;
 
     @media (min-width: $tablet-width) {
       width: 186px;
       padding: 0 57px;
       font-size: 40px;
+      line-height: 48px;
     }
 
     @media (min-width: $desktop-width) {
       width: 232px;
       padding: 0 34px;
       font-size: 50px;
-      line-height: auto;
+      line-height: 68px;
     }
   }
 
