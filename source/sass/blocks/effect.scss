@@ -1,10 +1,12 @@
 .effect {
   position: relative;
+  z-index: 2;
   width: 100%;
   display: none;
 
   @media (min-width: $tablet-width) {
     display: block;
+    margin-top: -65px;
     background-color: $secondary-bgr;
   }
 
