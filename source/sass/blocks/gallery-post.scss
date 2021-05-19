@@ -1,16 +1,16 @@
 .gallery-post {
 
-  background-color: $secongaryBgr;
+  background-color: $secondary-bgr;
 
   .gallery-post__username {
-    color: $darkTextBgr;
+    color: $dark-text-bgr;
     font-size: 14px;
     font-weight: 700;
     line-height: 24px;
   }
 
   .gallery-post__time {
-    color: $darkTextBgr;
+    color: $dark-text-bgr;
     font-size: 12px;
     font-weight: 300;
     line-height: 24px;
@@ -18,14 +18,14 @@
   }
 
   .gallery-post__content {
-    color: $darkTextBgr;
+    color: $dark-text-bgr;
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
   }
 
   .gallery-post__like-text {
-    color: $accentText;
+    color: $accent-text;
     font-size: 12px;
     font-weight: 400;
     line-height: 24px;

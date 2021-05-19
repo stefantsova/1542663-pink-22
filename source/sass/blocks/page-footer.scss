@@ -11,8 +11,20 @@
     justify-content: space-between;
   }
 
+  @media (min-width: $desktop-width) {
+    width: 940px;
+    margin: 0 auto;
+  }
+
+  .page-footer__copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 130px;
+  }
+
   .page-footer__copyright-text {
-    color: $darkTextBgr;
+    color: $dark-text-bgr;
     font-size: 14px;
     font-weight: 400;
     line-height: 18px;

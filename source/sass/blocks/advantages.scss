@@ -2,7 +2,23 @@
   position: relative;
   z-index: 1;
   background-color: #ffffff;
-  background-image: linear-gradient(-5deg, $secongaryBgr 80%, transparent 20%);
+  background-image: linear-gradient(-5deg, $secondary-bgr 80%, transparent 20%);
+
+  @media (min-width: $tablet-width) {
+    background-image: linear-gradient(-5deg, $secondary-bgr 70%, transparent 20%);
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: linear-gradient(-5deg, $secondary-bgr 61%, transparent 20%);
+  }
+
+  .advantages__wrapper {
+    @media (min-width: $desktop-width) {
+      width: 940px;
+      padding: 0 24px;
+      margin: 0 auto;
+    }
+  }
 
   .advantages__phone-one,
   .advantages__phone-two {
@@ -25,12 +41,11 @@
     }
   }
 
-  .advantages__wrapper {
+  .advantages__list-wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 20px;
     box-sizing: border-box;
 
     @media (min-width: $tablet-width) {
@@ -44,12 +59,11 @@
   }
 
   .advantages__lead-text {
+    box-sizing: border-box;
     width: 100%;
     padding: 0;
-    margin-top: 46px;
-    margin-bottom: 123px;
-    box-sizing: border-box;
-    color: $darkTextBgr;
+    margin: 39px auto 17px;
+    color: $dark-text-bgr;
     font-size: 24px;
     font-weight: 300;
     line-height: 29px;
@@ -57,9 +71,8 @@
 
     @media (min-width: $tablet-width) {
       width: 100%;
-      padding: 0 16px;
       margin-top: 58px;
-      margin-bottom: 47px;
+      margin-bottom: 0;
       font-size: 40px;
       line-height: 54px;
     }
@@ -67,10 +80,26 @@
     @media (min-width: $desktop-width) {
       width: 100%;
       padding: 0 80px;
-      margin-top: 79px;
-      margin-bottom: 72px;
+      margin-top: 61px;
+      margin-bottom: 0;
       font-size: 50px;
       line-height: 68px;
+    }
+
+    &--bottom {
+      margin-top: 0;
+      margin-bottom: 115px;
+
+      @media (min-width: $tablet-width) {
+        width: 334px;
+        padding: 0;
+        margin-bottom: 35px;
+      }
+
+      @media (min-width: $desktop-width) {
+        width: 416px;
+        margin-bottom: 58px;
+      }
     }
   }
 
@@ -91,10 +120,40 @@
     }
   }
 
+  .advantage__phone {
+    @media (min-width: $desktop-width) {
+      width: 186px;
+      height: 382px;
+    }
+  }
+
+  .advantages__screen {
+    position: absolute;
+    z-index: 10;
+    width: 136px;
+    height: 245px;
+    bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url("../../img/iphone_screen_smile.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    @media (min-width: $tablet-width) {
+      margin-left: 15px;
+      margin-right: auto;
+      bottom: 66px;
+      width: 237px;
+      height: 421px;
+      background: none;
+    }
+  }
+
   .advantages__list {
     width: 100%;
     padding: 0;
     margin: 0;
+    margin-bottom: 10px;
     box-sizing: border-box;
     list-style: none;
     text-align: center;
@@ -111,10 +170,10 @@
       flex-direction: row;
       justify-content: space-between;
       width: 100%;
-      padding: 0 30px;
+      padding: 0 33px;
       bottom: 80px;
       z-index: 2;
-      background-color: $secongaryBgr;
+      background-color: $secondary-bgr;
     }
   }
 
@@ -143,6 +202,8 @@
   }
 
   .advantages__item-title {
+    margin-top: 0;
+    margin-bottom: 12px;
     font-size: 18px;
     font-weight: 700;
     line-height: 24px;
@@ -155,7 +216,9 @@
   }
 
   .advantages__item-description {
-    color: $darkTextBgr;
+    margin-top: 0;
+    margin-bottom: 32px;
+    color: $dark-text-bgr;
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;

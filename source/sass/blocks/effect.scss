@@ -4,23 +4,33 @@
   display: none;
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    justify-content: space-between;
-    padding: 54px 20px 0 20px;
-    box-sizing: border-box;
-    bottom: 66px;
-    z-index: 2;
-    background-color: #ffffff;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 47px 0 80px 0;
-    box-sizing: border-box;
-    background-color: $secongaryBgr;
-    background-image: none;
+    display: block;
+    background-color: $secondary-bgr;
   }
 
   .effect__wrapper {
+    @media (min-width: $tablet-width) {
+      display: flex;
+      justify-content: space-between;
+      padding: 54px 20px 0 20px;
+      margin-bottom: 57px;
+      box-sizing: border-box;
+      bottom: 66px;
+      z-index: 2;
+      background-color: #ffffff;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 940px;
+      padding: 47px 0 67px;
+      margin: 0 auto;
+      box-sizing: border-box;
+      background-color: $secondary-bgr;
+      background-image: none;
+    }
+  }
+
+  .effect__content-wrapper {
     @media (min-width: $tablet-width) {
       width: 50%;
     }
@@ -31,8 +41,8 @@
   }
 
   .effect__title {
-    width: 50%;
-    color: $secondaryHeading;
+    width: 168px;
+    color: $secondary-heading;
     font-size: 30px;
     font-weight: 700;
     line-height: 36px;
@@ -45,7 +55,7 @@
 
   .effect__text {
     width: 100%;
-    color: $darkTextBgr;
+    color: $dark-text-bgr;
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
@@ -58,7 +68,7 @@
   }
 
   .effect__link {
-    color: $accentText;
+    color: $accent-text;
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
