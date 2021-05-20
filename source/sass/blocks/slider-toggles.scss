@@ -1,0 +1,24 @@
+.slider-toggles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 12px;
+
+  .slider-toggles__item {
+    box-sizing: border-box;
+    margin: 0 9px;
+    padding: 0;
+    width: 6px;
+    height: 6px;
+    border: 0;
+    border-radius: 50%;
+    background-color: $dark-text-bgr;
+    opacity: 0.3;
+
+    &--current {
+      background-color: $light-text;
+      box-shadow: 0 0 0 3px $dark-text-bgr;
+      opacity: 1;
+    }
+  }
+}

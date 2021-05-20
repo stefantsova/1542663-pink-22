@@ -1,13 +1,13 @@
 .upload-photo {
   .upload-photo__text {
-    color: $darkTextBgr;
+    color: $dark-text-bgr;
     font-size: 14px;
     font-weight: 400;
     line-height: 30px;
   }
 
   .upload-photo__form {
-    background-color: $secongaryBgr;
+    background-color: $secondary-bgr;
   }
 
   .upload-photo__tools {
@@ -17,23 +17,23 @@
   .upload-photo__button {
     &_submit {
       padding: 21px 39px 21px 38px;
-      color: $accentText;
+      color: $accent-text;
       font-size: 18px;
       font-weight: 700;
       line-height: 18px;
       text-decoration: none;
-      border: 3px solid $accentText;
+      border: 3px solid $accent-text;
       border-radius: 29px;
     }
 
     &_reset {
       padding: 21px 39px 21px 38px;
-      color: $darkTextBgr;
+      color: $dark-text-bgr;
       font-size: 18px;
       font-weight: 700;
       line-height: 18px;
       text-decoration: none;
-      border: 3px solid $darkTextBgr;
+      border: 3px solid $dark-text-bgr;
       border-radius: 29px;
       opacity: 0.1;
     }

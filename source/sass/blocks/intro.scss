@@ -1,34 +1,176 @@
 .intro {
-  background-color: $darkTextBgr;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: $dark-text-bgr;
   background-image: url("../img/index/back-mobile.jpg");
   background-repeat: no-repeat;
-}
+  background-size: 100%;
 
-.intro__title {
-  color: $lightText;
-  font-size: 24px;
-  font-weight: 300;
-  line-height: 120%;
-}
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/back_tablet.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 
-.intro__download-button {
-  padding: 21px 39px 21px 38px;
-  color: $lightText;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 18px;
-  text-decoration: none;
-  border: 3px solid white;
-  border-radius: 29px;
-}
+  @media (min-width: $desktop-width) {
+    padding: 208px 0 0;
+    background-image: url("../img/back-desktop.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 
-.intro__download-list {
-  list-style: none;
-}
+  .intro__bgr-wrapper {
+    position: relative;
+    width: 100%;
 
-.intro__text {
-  color: $lightText;
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 24px;
+    @media (min-width: $tablet-width) {
+      background-image: url("../img/index/hand_tablet1.png");
+      background-repeat: no-repeat;
+      background-position: bottom;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin: 0 auto;
+      width: 940px;
+      background-image: url("../img/index/hand_desktop1.png");
+      background-repeat: no-repeat;
+      background-position: bottom left 10px;
+    }
+  }
+
+  .intro__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (min-width: $tablet-width) {
+      padding: 90px 0 80px;
+      width: 50%;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 0;
+      width: 300px;
+    }
+  }
+
+  .intro__demo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-image: url("../img/index/hand_mobile.png");
+    background-repeat: no-repeat;
+    background-position: bottom left;
+
+    @media (min-width: $tablet-width) {
+      background-image: none;
+    }
+  }
+
+  .intro__title {
+    width: 240px;
+    padding: 0 0 311px;
+    margin: 23px 0 0;
+    color: $light-text;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 29px;
+    text-align: center;
+
+    @media (min-width: $tablet-width) {
+      width: 186px;
+      padding: 0 57px;
+      font-size: 40px;
+      line-height: 48px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 232px;
+      padding: 0 34px;
+      margin: 0;
+      font-size: 50px;
+      line-height: 68px;
+    }
+  }
+
+  .intro__screen {
+    position: absolute;
+    width: 111px;
+    height: 197px;
+    top: 138px;
+    left: 104px;
+    background-image: url("../img/screen.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  .intro__download {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 28px 0 31px 0;
+    background-color: $darkest-bgr;
+
+    @media (min-width: $tablet-width) {
+      background: none;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 41px 0 123px 0;
+    }
+  }
+
+  .intro__download-button {
+    width: 203px;
+    padding: 12px 45px 12px;
+    color: $light-text;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18px;
+    text-align: center;
+    text-decoration: none;
+    border: 3px solid white;
+    border-radius: 29px;
+  }
+
+  .intro__download-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 0 21px;
+    margin: 0;
+    width: 204px;
+    list-style: none;
+
+    @media (min-width: $tablet-width) {
+      padding: 46px 0 38px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 67px 0 53px;
+    }
+  }
+
+  .intro__text {
+    width: 280px;
+    padding: 0;
+    margin: 0;
+    color: $light-text;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    text-align: center;
+
+    @media (min-width: $tablet-width) {
+      width: 300px;
+      font-size: 18px;
+    }
+  }
 }
