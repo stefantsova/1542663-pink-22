@@ -39,5 +39,29 @@
   .site-navigation__link {
     color: $light-text;
     text-decoration: none;
+
+    @media (min-width: $desktop-width) {
+      padding-top: 14px;
+      padding-bottom: 14px;
+    }
+  }
+
+  .site-navigation__link:hover {
+    color: $accent-text;
+  }
+
+  .site-navigation__link:focus {
+    color: $accent-text;
+    opacity: 0.3;
+
+    @media (min-width: $desktop-width) {
+      color: $light-text;
+    }
+  }
+
+  .site-navigation__link:active {
+    @media (min-width: $desktop-width) {
+      border-bottom: 2px solid white;
+    }
   }
 }

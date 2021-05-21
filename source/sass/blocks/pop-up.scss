@@ -1,0 +1,36 @@
+.pop-up {
+  display: none;
+  width: 100%;
+
+  &--success {
+    background: linear-gradient(0deg, $secondary-bgr 44%, #ffffff 44%);
+  }
+
+  .pop-up__title {
+    width: 238px;
+    padding-top: 40px;
+    margin: 0 auto;
+    font-size: 18px;
+    font-weight: 700px;
+    line-height: 24px;
+    color: #000000;
+  }
+
+  .pop-up__text {
+    padding: 48px 20px 36px 20px;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 400px;
+    line-height: 24px;
+    color: $dark-text-bgr;
+    text-align: center;
+
+    &--failure {
+      padding-bottom: 0;
+    }
+  }
+
+  .pop-up__btn {
+    margin: 52px 20px;
+  }
+}

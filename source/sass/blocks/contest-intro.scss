@@ -1,8 +1,30 @@
 .contest-intro {
-  .contest-intro__text {
-    color: $dark-text-bgr;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 30px;
+  @media (min-width: $desktop-width) {
+    padding-top: 170px;
+  }
+
+  .contest-intro__heading {
+    width: 228px;
+    margin: 28px auto 42px;
+    color: $light-text;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 33px;
+    text-align: center;
+
+    @media (min-width: $tablet-width) {
+      box-sizing: border-box;
+      width: 620px;
+      padding: 0 20px;
+      margin: 67px auto 60px;
+      font-size: 50px;
+      line-height: 68px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 747px;
+      padding: 0;
+      margin: 0 auto 90px;
+    }
   }
 }

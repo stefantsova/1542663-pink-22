@@ -1,0 +1,24 @@
+.btn {
+  width: 276px;
+  padding: 16px 43px;
+  color: $light-text;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+  background-color: $submit-btn;
+  border: 2px solid $submit-btn;
+
+  .btn:hover {
+    background-color: $submit-btn-hover;
+  }
+
+  .btn:active {
+    background-color: $submit-btn-hover;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  .btn:disabled {
+    background-color: $submit-btn-disabled;
+  }
+}
