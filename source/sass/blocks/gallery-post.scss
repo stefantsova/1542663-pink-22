@@ -4,6 +4,7 @@
   background-color: $secondary-bgr;
 
   @media (min-width: $tablet-width) {
+    flex-grow: 1;
     width: 300px;
     margin: 0;
   }

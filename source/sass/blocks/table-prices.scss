@@ -11,12 +11,12 @@
   }
 
   .table-prices__head-cell {
-    padding: 14px 95px 20px;
+    padding: 12px 95px 24px;
     background-color: $dark-text-bgr;
     scroll-snap-align: center;
 
     @media (min-width: $tablet-width) {
-      padding: 14px 33px 10px;
+      padding: 12px 33px 10px;
     }
 
     @media (min-width: $desktop-width) {
@@ -39,6 +39,7 @@
   }
 
   .table-prices__plan {
+    width: 86px;
     margin: 0;
     font-size: 16px;
     font-weight: 700;

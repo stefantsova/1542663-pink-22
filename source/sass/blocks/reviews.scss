@@ -7,6 +7,8 @@
 
   @media (min-width: $tablet-width) {
     background-image: linear-gradient(-5deg, $secondary-bgr 17%, transparent 0);
+    padding-top: 58px;
+    padding-bottom: 20px;
 
     @media (min-width: $desktop-width) {
       background-image: none;
@@ -17,8 +19,8 @@
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    padding-top: 43px;
-    padding-bottom: 62px;
+    padding-top: 26px;
+    padding-bottom: 58px;
 
     @media (min-width: $desktop-width) {
       width: 940px;
@@ -66,6 +68,7 @@
   }
 
   .reviews__author-name {
+    margin-bottom: 16px;
     font-size: 18px;
     font-weight: 700;
     font-style: normal;

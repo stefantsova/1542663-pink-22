@@ -2,7 +2,7 @@
   background: $secondary-bgr;
 
   @media (min-width: $tablet-width) {
-    padding: 52px 20px 70px;
+    padding: 32px 20px 70px;
   }
 
   @media (min-width: $desktop-width) {
@@ -39,7 +39,7 @@
   }
 
   .price__toggles {
-    padding-top: 45px;
+    padding-top: 40px;
     padding-bottom: 49px;
 
     @media (min-width: $tablet-width) {
