@@ -91,6 +91,7 @@
     }
   }
 
+  .contest-form__personal-list,
   .contest-form__achievements-list,
   .contest-form__contact-info-list,
   .contest-form__os-list {
@@ -174,6 +175,9 @@
       padding-bottom: 20px;
 
       @media (min-width: $tablet-width) {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
         padding-bottom: 56px;
       }
     }
@@ -235,6 +239,13 @@
       box-sizing: border-box;
     }
 
+    &--personal-info {
+      @media (min-width: $tablet-width) {
+        width: auto;
+        flex-grow: 1;
+      }
+    }
+    /*
     &--surname {
       @media (min-width: $tablet-width) {
         width: 521px;
@@ -263,7 +274,7 @@
       @media (min-width: $desktop-width) {
         width: 336px;
       }
-    }
+    }*/
 
     &--contact-info {
       @media (min-width: $tablet-width) {
@@ -280,8 +291,9 @@
     border: 2px solid $dark-text-bgr;
   }
 
-  .contest-form__input:active {
+  .contest-form__input:focus {
     border: 2px solid $accent-text;
+    outline: none;
   }
 
   .contest-form__achievements {
@@ -492,6 +504,7 @@
     height: 35px;
     background-color: #ffffff;
     border: 2px solid $border;
+    cursor: pointer;
   }
 
   .contest-form__checkbox:checked + .contest-form__custom-checkbox {
@@ -524,6 +537,7 @@
     background-color: #ffffff;
     border: 2px solid $border;
     border-radius: 50%;
+    cursor: pointer;
 
     @media (min-width: $desktop-width) {
       margin-left: 42px;

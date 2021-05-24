@@ -9,16 +9,16 @@
   background-color: $submit-btn;
   border: 2px solid $submit-btn;
 
-  .btn:hover {
+  &:hover {
     background-color: $submit-btn-hover;
   }
 
-  .btn:active {
+  &:active {
     background-color: $submit-btn-hover;
     color: rgba(255, 255, 255, 0.3);
   }
 
-  .btn:disabled {
+  &:disabled {
     background-color: $submit-btn-disabled;
   }
 }

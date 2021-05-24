@@ -1,0 +1,20 @@
+.catalog {
+  .catalog__lead-text {
+    width: 246px;
+    padding: 44px 36px 34px 36px;
+    margin: 0;
+    color: $dark-text-bgr;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+
+    @media (min-width: $tablet-width) {
+      width: 620px;
+      padding: 0 90px;
+      margin: 90px auto 77px;
+      box-sizing: border-box;
+      font-size: 18px;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+.gallery-wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    min-height: 1405px;
+    padding: 0 20px;
+    margin-top: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+    min-height: 1164px;
+    padding: 0;
+    margin: 50px auto 0;
+  }
+}

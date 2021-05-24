@@ -1,6 +1,54 @@
 .gallery-post {
-
+  width: 280px;
+  margin: 20px auto 0;
   background-color: $secondary-bgr;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+    margin: 0;
+  }
+
+  &--best-panorama {
+    width: 100%;
+    background-color: #ffffff;
+
+    @media (min-width: $desktop-width) {
+      width: 1200px;
+      margin: 0 auto;
+    }
+  }
+
+  .gallery-post__photo {
+    background-color: $secondary-bgr;
+    width: 100%;
+  }
+
+  .gallery-post__wrapper {
+    box-sizing: border-box;
+    padding: 18px 10px 24px 17px;
+
+    @media (min-width: $tablet-width) {
+      padding: 18px 30px 24px 30px;
+    }
+
+    &--best-panorama {
+      width: 280px;
+      margin: auto;
+      margin-top: -5px;
+      background-color: $secondary-bgr;
+
+      @media (min-width: $tablet-width) {
+        display: flex;
+        flex-wrap: wrap;
+        width: 620px;
+      }
+
+      @media (min-width: $desktop-width) {
+        width: 940px;
+        margin: 0 auto;
+      }
+    }
+  }
 
   .gallery-post__username {
     color: $dark-text-bgr;
@@ -18,10 +66,55 @@
   }
 
   .gallery-post__content {
+    margin: 0;
     color: $dark-text-bgr;
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
+
+    @media (min-width: $tablet-width) {
+      height: 34px;
+    }
+  }
+
+  .gallery-post__main {
+    flex-grow: 1;
+    width: 100%;
+    order: 1;
+  }
+
+  .gallery-post__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 120px;
+    padding-top: 13px;
+    margin-top: 13px;
+
+    @media (min-width: $tablet-width) {
+      width: 100%;
+    }
+
+    &--best-panorama {
+      @media (min-width: $tablet-width) {
+        width: 130px;
+        padding: 0;
+        margin: 0;
+        margin-left: auto;
+      }
+    }
+  }
+
+  .gallery-post__heart {
+    width: 13px;
+    height: 12px;
+    background-image: url("../img/heart.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media (min-width: $tablet-width) {
+      order: 1;
+    }
   }
 
   .gallery-post__like-text {
